@@ -14,8 +14,7 @@ function App() {
   const submitForm = e => {
     e.preventDefault();
     let val = e.currentTarget.firstChild.value;
-    console.log(val);
-    setSearchQuery(val);
+    val !='' ? setSearchQuery(val) : alert('Please enter search word');
 }
 
   useEffect(() => {
@@ -33,7 +32,7 @@ function App() {
     <div className="App">
 
       <SearchBar submitForm={submitForm}/>
-       
+
       <Gallery images={images}/>
 
 

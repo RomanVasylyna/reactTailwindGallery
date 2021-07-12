@@ -4,9 +4,9 @@ const SinglePicture = ({ image }) => {
 
     console.log(image);
     return (
-        <div className="flex-auto text-center h-7">
+        <div className="text-center h-7">
             <div className="max-w-sm rounded overflow-hidden shadow-lg px-4 py-2 m-2">
-                
+
                 <img src={image.largeImageURL} className="w-full"></img>
 
                 <div className="px-6 py-4">

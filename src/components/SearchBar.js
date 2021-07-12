@@ -4,12 +4,12 @@ const SearchBar = ({submitForm}) => {
 
     return (
         <div>
-            <form className="w-full max-w-sm text-center"
+            <form className="w-full mt-6"
                 onSubmit={e => submitForm(e)}>
 
                 <input type="text"
                     placeholder="Search Images Here"
-                    className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    className="shadow appearance-none border rounded py-2 pl-3 pr-32 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                 </input>
 
                 <input type="submit"
