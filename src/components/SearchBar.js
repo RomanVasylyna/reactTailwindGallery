@@ -4,7 +4,7 @@ const SearchBar = ({submitForm}) => {
 
     return (
         <div>
-            <form className="w-full mt-6"
+            <form className="w-auto mt-6 mb-3"
                 onSubmit={e => submitForm(e)}>
 
                 <input type="text"

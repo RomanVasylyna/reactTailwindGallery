@@ -1,17 +1,16 @@
 import React from 'react'
 
 const SinglePicture = ({ image }) => {
-
     console.log(image);
+
     return (
-        <div className="text-center h-7 py-64 ">
             <div className="max-w-sm rounded overflow-hidden shadow-lg px-4 py-2 m-2">
 
                 <img src={image.largeImageURL} className="w-full"></img>
 
                 <div className="px-6 py-4">
-                    <div className="font-bold text-purple-500 mb-2 text-xl">IMG TITLE</div>
-                    Photo By {image.user}
+                    <div className="font-bold text-purple-500 mb-2 text-xl">Photo By {image.user}</div>
+                    
                 </div>
 
                 {/* Likes/Comments/Views */}
@@ -31,7 +30,7 @@ const SinglePicture = ({ image }) => {
                 </ul>
 
                 {/* Tags */}
-                <div className="px-6 py-4">
+                <div className="px-2 py-4">
                     {image.tags.split(',').map(tag =>
                         <span key={image.tag} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
                             #{tag}
@@ -39,7 +38,6 @@ const SinglePicture = ({ image }) => {
                 </div>
 
             </div>
-        </div>
     )
 }
 
